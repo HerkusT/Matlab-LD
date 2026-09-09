@@ -41,16 +41,8 @@ disp('Matrica A:')
 disp(A)
 
 disp('a) Atrinkta matrica:')
-disp(Aa)
 
-disp('b) Atrinkta matrica:')
-disp(Ab)
 
-disp('c) Atrinkta matrica:')
-disp(Ac)
-
-disp('Matrica A su prijungtu vektoriumi:')
-disp(A_nauja)
 
 
 
