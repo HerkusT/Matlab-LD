@@ -11,45 +11,7 @@ title('Dvi funkcijos')
 xlabel('X-ai')
 ylabel('F_1 [-o-]   |  F_2 [-x-')
 
-% Papildoma uzduotis
 
-
-N = 3;
-
-
-
-v = N+1 : 0.5 : N+4;
-
-
-A = N : N+8;
-A = reshape(A, 3, 3);
-
-
-Aa = A([3], [2]);
-
-Ab = A([2 3], [1 2]);
-
-Ac = A([1 3], [1 3]);
-
-A_nauja = [A, v'];
-
-disp('Vektorius v:')
-disp(v)
-
-disp('Matrica A:')
-disp(A)
-
-disp('a) Atrinkta matrica:')
-disp(Aa)
-
-disp('b) Atrinkta matrica:')
-disp(Ab)
-
-disp('c) Atrinkta matrica:')
-disp(Ac)
-
-disp('Matrica A su prijungtu vektoriumi:')
-disp(A_nauja)
 
 %Papildomas balas
 
