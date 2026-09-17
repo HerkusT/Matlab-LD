@@ -13,23 +13,22 @@ ylabel('F_1 [-o-]   |  F_2 [-x-')
 
 % Papildoma uzduotis
 
-%Priskiriamas kintamasis
+
 N = 3;
 
-% Vektorius: nuo N+1 iki N+4, su poslinkiu 0,5
+
 
 v = N+1 : 0.5 : N+4;
 
-%3x3 matrica A
+
 A = N : N+8;
 A = reshape(A, 3, 3);
 
-% Eiluciu ir stulpeliu atrinkimas pagal schemas
-% a) 3 eilute, 2 stulpelis
+
 Aa = A([3], [2]);
-% b) 2 ir 3 eilutes, 1 ir 2 stulpeliai
-Ab = A([2 3]), [1 2]);
-% c) 1 ir 3 eilutes, 1 ir 3 stulpeliai
+
+Ab = A([2 3], [1 2]);
+
 Ac = A([1 3], [1 3]);
 
 A_nauja = [A, v'];
@@ -52,5 +51,18 @@ disp(Ac)
 disp('Matrica A su prijungtu vektoriumi:')
 disp(A_nauja)
 
+%Papildomas balas
 
 
+N = 0;
+j = N+1:0,5:N+4
+
+A = [N N+1 N+2; N+3 N+4 N+5; N+6 N+7 N+8]
+
+A(3,2)
+A(2:3,1:2)
+A([1 7 3 9])
+
+b = [j(1) j(4) j(7)];
+
+vertcat (A, b)
