@@ -25,6 +25,9 @@ A(3,2)
 A(2:3,1:2)
 A([1 7 3 9])
 
+disp(j)
+length(j)
+
 b = [j(1) j(4) j(7)];
 
 vertcat (A, b)
